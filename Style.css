@@ -1,0 +1,47 @@
+@keyframes shadow {
+    from {
+        transform: translateX(-55px);
+    }
+
+
+    to {
+        transform: translateY(-150px);
+    }
+}
+
+.image {
+    width: 100px;
+    height: 100px;
+    animation: shadow 4s infinite ease-in-out;
+}
+
+.image1 {
+    width: 100px;
+    height: 100px;
+}
+
+
+@keyframes text {
+    from {
+        background-color: brown;
+        box-shadow: 5px 5px blue;
+    }
+
+    25% {background-color: chartreuse;}
+    50% {background-color:antiquewhite;
+        transform: translate(55px);}
+    75% {background-color: cadetblue;}
+    
+
+    to {
+        background-color: darkgoldenrod;
+        box-shadow: 9px 9px rgb(170, 29, 128);
+        transform: translate(0px);
+    }
+}
+
+.link:hover {
+    width: 100px;
+    height: 100px;
+    animation: text 2s ease;
+}
